@@ -1,0 +1,329 @@
+/*======================================
+    Intro Video CSS
+========================================*/
+.intro-video-area-home {
+  background:
+  linear-gradient(
+  rgba(13, 110, 255, 0.7),
+  rgba(18, 176, 127, 0.7)
+  ), url("../images/bg/wholesale4.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 9;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+
+.intro-video-area-home.overlay::before {
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.intro-video-area-home .section-title {
+  margin-bottom: 200px;
+  width: 80%;
+  margin-top: 3.5rem;
+  margin-left: 5rem;
+}
+
+.intro-video-area-home .intro-video-play {
+  position: relative;
+  z-index: 9;
+}
+
+.intro-video-area-home .intro-video-play .play-thumb a {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  height: 110px;
+  width: 110px;
+  text-align: center;
+  line-height: 116px;
+  background: #fff;
+  border-radius: 50%;
+  padding-left: 5px;
+  font-size: 25px;
+  color: #3763EB;
+  margin-left: -55px;
+}
+
+.intro-video-area-home .intro-video-play .play-thumb a:hover {
+  background-color: #3763EB;
+  color: #fff;
+}
+
+.intro-video-area-home .intro-video-play .play-thumb a::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  -webkit-animation: pulse-border-2 1.5s linear infinite;
+  animation: pulse-border-2 1.5s linear infinite;
+}
+
+.intro-video-area-home .intro-video-play .play-thumb a::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  -webkit-animation: pulse-border 1s linear infinite;
+  animation: pulse-border 1s linear infinite;
+}
+
+@-webkit-keyframes pulse-border {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-border {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes pulse-border-2 {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-border-2 {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+/*======================================
+    Responsive CSS
+========================================*/
+/* Tablet Screen */
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+/* Mobile Screen */
+@media only screen and (max-width: 767px) {
+  .intro-video-area-home .section-title {
+    margin-bottom: 130px;
+    width: 80%;
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    
+  }
+
+  .intro-video-area-home .play-thumb {
+    position: relative;
+    left: 15px;
+  }
+  .intro-video-area-home .intro-video-play .play-thumb a {
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    font-size: 16px;
+  }
+  .intro-video-area-home {
+    padding-bottom: 75px !important;
+  }
+}
+
+/*======================================
+    Intro Video CSS
+========================================*/
+.intro-video-area-about {
+  background:
+  linear-gradient(
+  rgba(13, 110, 255, 0.7),
+  rgba(18, 176, 127, 0.7)
+  ), url("../images/bg/wholesale2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 9;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+
+.intro-video-area-about.overlay::before {
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.intro-video-area-about .section-title {
+  margin-bottom: 200px;
+  width: 80%;
+  margin-top: 3.5rem;
+  margin-left: 5rem;
+}
+
+.intro-video-area-about .intro-video-play {
+  position: relative;
+  z-index: 9;
+}
+
+.intro-video-area-about .intro-video-play .play-thumb a {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  height: 110px;
+  width: 110px;
+  text-align: center;
+  line-height: 116px;
+  background: #fff;
+  border-radius: 50%;
+  padding-left: 5px;
+  font-size: 25px;
+  color: #3763EB;
+  margin-left: -55px;
+}
+
+.intro-video-area-about .intro-video-play .play-thumb a:hover {
+  background-color: #3763EB;
+  color: #fff;
+}
+
+.intro-video-area-about .intro-video-play .play-thumb a::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  -webkit-animation: pulse-border-2 1.5s linear infinite;
+  animation: pulse-border-2 1.5s linear infinite;
+}
+
+.intro-video-area-about .intro-video-play .play-thumb a::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  -webkit-animation: pulse-border 1s linear infinite;
+  animation: pulse-border 1s linear infinite;
+}
+
+@-webkit-keyframes pulse-border {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-border {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes pulse-border-2 {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-border-2 {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+/*======================================
+    Responsive CSS
+========================================*/
+/* Tablet Screen */
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+/* Mobile Screen */
+@media only screen and (max-width: 767px) {
+  .intro-video-area-about .section-title {
+    margin-bottom: 130px;
+    width: 80%;
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    
+  }
+
+  .intro-video-area-about .play-thumb {
+    position: relative;
+    left: 15px;
+  }
+  .intro-video-area-about .intro-video-play .play-thumb a {
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    font-size: 16px;
+  }
+  .intro-video-area-about {
+    padding-bottom: 75px !important;
+  }
+}
