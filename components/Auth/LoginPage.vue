@@ -18,7 +18,6 @@
 								<div v-else></div>
 								
 								<form @submit.prevent="LoginUser">
-									<input type="hidden" v-model="form.ip_address">
 									<div class="form-group mb-3">
 										<input  id="inputEmail" type="email" placeholder="Email address"autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4"
 										v-model="form.email">
@@ -88,7 +87,6 @@
 		},
 
 		mounted(){
-			this.ip_address(),
 			this.CheckLogin(),
 			this.getToken(),
 			this.Checkuser(),
@@ -106,23 +104,9 @@
 				this.form = {}
 			},
 
-			ip_address(){
-				this.$axios.get('https://api.ipify.org/?format=json')
-				.then(({data}) => {
-					this.form.ip_address = data.ip
-				})
-				.catch(err => {
-					console.log(err.response)
-				})
-			},
-
 			LoginUser(){
 				this.loading = true
-				this.$axios.post('/login', {
-					email: this.form.email,
-					password: this.form.password,
-					ip_address: this.form.ip_address
-				})
+				this.$axios.post('/login', this.form)
 				.then(({data}) => {
 					console.log(data)
 					if(!data.success || data.failed){
