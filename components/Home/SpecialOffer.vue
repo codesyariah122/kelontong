@@ -6,7 +6,7 @@
 					<div class="col-xl-7 col-lg-6 col-12 text-left"> 
 						<div class="atf-special-content atf-section-title  mx-auto my-auto">	
 							<h4 class="mb-2">Get 30%  Discount </h4>
-							<h2>Promo Terbaik Bagi 100 Toko Pendaftar</h2>
+							<h2>Promo Terbaik Bagi 100 Pendaftar Toko Pertama</h2>
 							<p class="pr-lg-5">Lorem elementum Sed congue nisl dolorSed congue nisl dolor Lorem elementum Sed congue nisl dolorSed eget augue Pellentesque sollicitudin efficitur, mattis dui vitae, sollicitudin nisl. </p>	
 
 							<h4 class="mt-5">Expire On</h4>															

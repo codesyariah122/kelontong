@@ -163,8 +163,9 @@
 
 			AfterLogin(){
 				if(this.token_login){
+					const user = JSON.stringify(localStorage.getItem('user'))
 					this.$swal({
-						title: `Ooops!! Sepertinya kamu sedang login ${this.user.name}`,
+						title: `Ooops!! Sepertinya kamu sedang login ${user.name}`,
 						width: 600,
 						timer: 2000,
 						padding: '3em',

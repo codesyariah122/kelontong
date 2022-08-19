@@ -90,7 +90,12 @@
 	export default {
 		data(){
 			return {
-				options: {placeholder: "8xx xxxx xxxx"},
+				options: {
+					placeholder: "8xx xxxx xxxx",
+					showDialCode: false, 
+					tabindex: 0,
+					mode: ''
+				},
 				form:{},
 				error: [],
 				password_confirmation_valid: '',
@@ -142,3 +147,14 @@
 
 	}
 </script>
+
+<style lang="scss">
+	.vti__flag{
+		margin-left: -.3rem;
+		margin-top: .3rem;
+	}
+	.vti__dropdown-arrow{
+		margin-left: .5rem;
+		margin-top: .3rem;
+	}
+</style>

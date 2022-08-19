@@ -31,9 +31,9 @@
 				<div class="container">
 					<div class="atf-main-header-in">
 						<div class="atf-main-header-left">
-							<nuxt-link class="atf-site-branding atf-white-logo" :to="{path: '/'}">
+							<a class="atf-site-branding atf-white-logo" href="/">
 								<img :src="require('~/assets/images/logo.png')" alt="Logo"><span>Kelontong</span>
-							</nuxt-link>
+							</a>
 						</div>
 
 						<div class="nav-right-part nav-right-part-mobile">
@@ -52,11 +52,11 @@
 									
 									<li class="menu-item-has-children"><a href="#" class="atf-smooth-move">Page<i class="fa fa-chevron-down ml-2"></i></a>
 										<ul>
-											<li>
-												<nuxt-link :to="{name: 'product'}">Product</nuxt-link>
-											</li>
 											<li><a href="blog.html">Blog</a></li>
 										</ul>
+									</li>
+									<li>
+										<nuxt-link :to="{name: 'product'}">Product</nuxt-link>
 									</li>
 									<li>
 										<nuxt-link to="/company-profile">Our Company</nuxt-link>
@@ -93,17 +93,17 @@
 
 	@media (min-width: 992px) {
 		.atf-site-branding{
-		img{
-			width: 75px;
-			margin-top: -.7rem;
+			img{
+				width: 75px;
+				margin-top: -.7rem;
+			}
+			span{
+				font-family: 'Poppins';
+				color: #fff;
+				font-weight: 800;
+				font-size: 1.5rem;
+				margin-left: -1rem;
+			}
 		}
-		span{
-			font-family: 'Poppins';
-			color: #fff;
-			font-weight: 800;
-			font-size: 1.5rem;
-			margin-left: -1rem;
-		}
-	}
 	}
 </style>
