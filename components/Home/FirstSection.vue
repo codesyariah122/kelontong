@@ -14,8 +14,8 @@
 												<h2 class="mb-0 d-block d-lg-block">{{slider.text.h2}}</h2>
 												<p class="pr-lg-5">{{slider.text.p}}</p>
 												<div class="atf-main-btn mt-3"> 
-													<a href="https://toko-kelontong.com" class="page-scroll atf-themes-btn mr-4">Daftar Toko <i class="fa fa-angle-right"></i></a>
-													<a href="https://toko-kelontong.com" class="page-scroll atf-themes-btn">Order Now <i class="fa fa-angle-right"></i></a>
+													<nuxt-link to="/auth/login" class="page-scroll atf-themes-btn mr-4">Daftar Toko <i class="fa fa-angle-right"></i></nuxt-link>
+													<nuxt-link to="/product" class="page-scroll atf-themes-btn">Order Now <i class="fa fa-angle-right"></i></nuxt-link>
 												</div>
 											</div>
 										</div>

@@ -16,7 +16,7 @@
 							<span class="float-start badge rounded-pill bg-success">{{kopi.price.formatted_with_code}}</span>
 
 							<span class="float-right" style="font-size: 1rem;margin-top:.1rem;">
-								Cartoon
+								{{kopi.price.raw > 50000 ? 'Cartoon' : 'Renceng'}}
 							</span>
 						</div>
 
