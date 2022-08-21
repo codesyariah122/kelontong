@@ -10,7 +10,7 @@ export default {
   target: 'static',
   env: {
    CONTENTFUL_SPACE: process.env.CONTENTFUL_SPACE,
-   CONTENTFUL_ACCESSTOKEN process.env.CONTENTFUL_ACCESSTOKEN,
+   CONTENTFUL_ACCESSTOKEN: process.env.CONTENTFUL_ACCESSTOKEN,
    CONTENTFUL_ENVIRONMENT: process.env.CONTENTFUL_ENVIRONMENT
   },
   generate: {
