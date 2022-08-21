@@ -13,11 +13,12 @@
 					</div>
 					<div class="card-body">
 						<div class="clearfix mb-3">
-							<span class="float-start badge rounded-pill bg-success">{{kebutuhan.price.formatted_with_code}}</span>
+							<!-- <span class="float-start badge rounded-pill bg-success">{{kebutuhan.price.formatted_with_code}}</span> -->
 
-							<span class="float-right" style="font-size: 1rem;margin-top:.1rem;">
+							<!-- <span class="float-right" style="font-size: 1rem;margin-top:.1rem;">
 								Cartoon
-							</span>
+							</span> -->
+							<span class="float-start badge rounded-pill bg-success">Stock: {{kebutuhan.inventory.available}}</span>
 						</div>
 
 						<div class="card-title">
@@ -26,7 +27,7 @@
 						</div>
 
 						<div class="d-grid gap-2 my-4">
-							<a href="#" class="btn btn-warning bold-btn">add to cart</a>
+							<a :href="kebutuhan.checkout_url.display" target="_blank" class="btn btn-warning bold-btn">add to cart</a>
 						</div>
 					</div>
 				</div>

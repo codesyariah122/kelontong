@@ -52,7 +52,7 @@
 									
 									<li class="menu-item-has-children"><a href="#" class="atf-smooth-move">Page<i class="fa fa-chevron-down ml-2"></i></a>
 										<ul>
-											<li><a href="blog.html">Blog</a></li>
+											<li><nuxt-link to="/blog">Blog</nuxt-link></li>
 										</ul>
 									</li>
 									<li>

@@ -8,7 +8,11 @@ export default {
   },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
+  env: {
+   CONTENTFUL_SPACE: process.env.CONTENTFUL_SPACE,
+   CONTENTFUL_ACCESS_TOKEN: process.env.CONTENTFUL_ACCESS_TOKEN,
+   CONTENTFUL_ENVIRONMENT: process.env.CONTENTFUL_ENVIRONMENT
+  },
   generate: {
    dir: 'dist',
     cache: {
@@ -146,7 +150,9 @@ export default {
     { src: '~/plugins/nuxt-leaflet', mode: 'client', ssr: false },
     { src: '~/plugins/PhoneNumber', mode: 'client', ssr: false },
     { src: '~/plugins/LaravelEcho', mode: 'client', ssr: false},
-    { src: '~/plugins/sweetalert', mode: 'client', ssr: false}
+    { src: '~/plugins/sweetalert', mode: 'client', ssr: false},
+    { src: "~/plugins/contentful", mode: 'client', ssr: false},
+    { src: "~/plugins/posts" }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -179,7 +185,8 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/markdownit'
     ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
