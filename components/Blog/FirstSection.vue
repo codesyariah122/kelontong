@@ -13,8 +13,7 @@
 					</div>
 				</div>
 			</div>
-		</div><!-- .atf-page-heading -->
-
+		</div>
 	</div>
 </template>
 
